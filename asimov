@@ -25,6 +25,12 @@ readonly ASIMOV_ROOT=~
 readonly ASIMOV_SKIP_PATHS=(
     ~/.Trash
     ~/Library
+    ~/.nuget/packages
+    ~/.local/share/NuGet/v3-cache
+    ~/.local/share/NuGet/plugins-cache
+    ~/.npm
+    ~/Library/pnpm/store/v3
+    ~/.bun/install/cache
 )
 
 # A list of "directory"/"sentinel" pairs.
@@ -70,6 +76,11 @@ readonly ASIMOV_VENDOR_DIR_SENTINELS=(
     '.terraform.d .terraformrc'        # Terraform plugin cache
     '.terragrunt-cache terragrunt.hcl' # Terragrunt
     'cdk.out cdk.json'                 # AWS CDK
+    'ios app.json'                     # Expo
+    'ios app.config.js'                # Expo
+    'ios app.config.ts'                # Expo
+    'bin Program.cs'                   # Dotnet
+    'obj Program.cs'                   # Dotnet
 )
 
 # Exclude the given paths from Time Machine backups.
